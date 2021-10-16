@@ -1,39 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Information about information -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/phone-style.css" media="screen and (max-width:900px)">
+    <title>Alignmet</title>
 </head>
+
 <body>
-    <div class="container">  
-        <form id="contact" action="" method="post">
-          <h3>Colorlib Contact Form</h3>
-          <h4>Contact us for custom quote</h4>
-          <fieldset>
-            <input placeholder="Your name" type="text" tabindex="1" required autofocus>
-          </fieldset>
-          <fieldset>
-            <input placeholder="Your Email Address" type="email" tabindex="2" required>
-          </fieldset>
-          <fieldset>
-            <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
-          </fieldset>
-          <fieldset>
-            <input placeholder="Your Web Site (optional)" type="url" tabindex="4" required>
-          </fieldset>
-          <fieldset>
-            <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
-          </fieldset>
-          <fieldset>
-            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-          </fieldset>
-          <p class="copyright">Designed by <a href="https://colorlib.com" target="_blank" title="Colorlib">Colorlib</a></p>
-        </form>
-      </div>
+
+    <nav class="navbar">
+        <div id="logo">
+            <img src="../Assets/Tomato.png" alt="Logo">
+        </div>
+        <ul>
+            <li class="item"><a href="#">Home</a></li>
+            <li class="item"><a href="#">About Us</a></li>
+            <li class="item"><a href="#">Services</a></li>
+            <li class="item"><a href="#">Contriutor</a></li>
+            <li class="item"><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1 id="head-top">Welcome To Our Restaurant</h1>
+        <p id="head-top-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptates explicabo facere! </p>
+        <button id="order">Order Now</button>
+    </section>
+    <section>
+        <h1 id="services-h">Our Services</h1>
+        <div class="services">
+            <div id="service1" class="service-item"><img src="../Assets/logo1.svg">
+                <h1 id="serv-head1">Easy Ordering</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, dolorem. Dignissimos voluptatum ad illum iste omnis neque labore, hic odio?</p>
+            </div>
+            <div id="service2" class="service-item"><img src="../Assets/logo2.svg">
+                <h1 id="serv-head2">More Choices</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem aut dicta laboriosam at ad reiciendis sequi amet sit temporibus architecto!</p>
+            </div>
+            <div id="service3" class="service-item"><img src="../Assets/logo3.svg">
+                <h1 id="serv-head3">Earn Rewards</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas temporibus nulla eum, voluptatum est quasi hic. Suscipit nobis animi ipsum?</p>
+            </div>
+        </div>
+    </section>
+
+
 </body>
 <script src="js/script.js"></script>
+<script src="https://kit.fontawesome.com/a57d77a968.js" crossorigin="anonymous"></script>
 
 </html>

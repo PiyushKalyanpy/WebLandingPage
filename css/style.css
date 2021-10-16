@@ -1,144 +1,163 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+:root {
+    --main-color: #e0001e;
+}
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
-  -o-font-smoothing: antialiased;
-  font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
+    padding: 0;
+    margin: 0;
 }
 
-body {
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
-  font-weight: 100;
-  font-size: 12px;
-  line-height: 30px;
-  color: #777;
-  background: #4CAF50;
+.navbar {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+    background: #141414;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    backdrop-filter: blur(10px);
 }
 
-.container {
-  max-width: 400px;
-  width: 100%;
-  margin: 0 auto;
-  position: relative;
+@media (max-width:629px) {
+    #logo {
+        display: none;
+    }
 }
 
-#contact input[type="text"],
-#contact input[type="email"],
-#contact input[type="tel"],
-#contact input[type="url"],
-#contact textarea,
-#contact button[type="submit"] {
-  font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+#logo img {
+    width: 50px;
+    height: 50px;
+    margin: 20px;
 }
 
-#contact {
-  background: #F9F9F9;
-  padding: 25px;
-  margin: 150px 0;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+.navbar ul {
+    display: flex;
 }
 
-#contact h3 {
-  display: block;
-  font-size: 30px;
-  font-weight: 300;
-  margin-bottom: 10px;
+.navbar ul li {
+    list-style: none;
 }
 
-#contact h4 {
-  margin: 5px 0 15px;
-  display: block;
-  font-size: 13px;
-  font-weight: 400;
+.navbar ul li a {
+    list-style: none;
+    padding: 10px 25px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins';
+    font-size: 1em;
+    position: relative;
 }
 
-fieldset {
-  border: medium none !important;
-  margin: 0 0 10px;
-  min-width: 100%;
-  padding: 0;
-  width: 100%;
+a:after {
+    bottom: 0;
+    content: "";
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
 }
 
-#contact input[type="text"],
-#contact input[type="email"],
-#contact input[type="tel"],
-#contact input[type="url"],
-#contact textarea {
-  width: 100%;
-  border: 1px solid #ccc;
-  background: #FFF;
-  margin: 0 0 5px;
-  padding: 10px;
+a:hover:after {
+    width: 80%;
+    left: 10%;
+    right: 10%;
 }
 
-#contact input[type="text"]:hover,
-#contact input[type="email"]:hover,
-#contact input[type="tel"]:hover,
-#contact input[type="url"]:hover,
-#contact textarea:hover {
-  -webkit-transition: border-color 0.3s ease-in-out;
-  -moz-transition: border-color 0.3s ease-in-out;
-  transition: border-color 0.3s ease-in-out;
-  border: 1px solid #aaa;
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 5% 10%;
+    justify-content: center;
+    height: 500px;
+    align-items: center;
+    background: url(../Assets/bg2.jpg) no-repeat center center/cover;
+    backdrop-filter: invert(1);
 }
 
-#contact textarea {
-  height: 100px;
-  max-width: 100%;
-  resize: none;
+#home::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: -2;
 }
 
-#contact button[type="submit"] {
-  cursor: pointer;
-  width: 100%;
-  border: none;
-  background: #4CAF50;
-  color: #FFF;
-  margin: 0 0 5px;
-  padding: 10px;
-  font-size: 15px;
+#home::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: -1;
+    background: linear-gradient( 359deg, #000000e3, transparent);
 }
 
-#contact button[type="submit"]:hover {
-  background: #43A047;
-  -webkit-transition: background 0.3s ease-in-out;
-  -moz-transition: background 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out;
+#home #head-top {
+    font-size: 4em;
+    color: white;
+    font-family: 'Poppins';
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
 }
 
-#contact button[type="submit"]:active {
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+#home #head-top-p {
+    font-size: 2em;
+    font-family: 'Poppins';
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
 }
 
-.copyright {
-  text-align: center;
+#home #order {
+    padding: 13px 31px;
+    background: #4aad00;
+    font-family: 'Poppins';
+    font-size: 2rem;
+    border: 2px solid;
+    color: white;
+    width: fit-content;
+    margin-top: 3rem;
+    border-radius: 55px;
 }
 
-#contact input:focus,
-#contact textarea:focus {
-  outline: 0;
-  border: 1px solid #aaa;
+#home #order:hover {
+    background: #5bd100;
+    transform: translateY(-3px);
+    box-shadow: 7px 7px 18px #5bd1005d;
 }
 
-::-webkit-input-placeholder {
-  color: #888;
+#services-h {
+    font-family: poppins;
+    font-size: 2em;
+    text-align: center;
+    margin: 20px;
 }
 
-:-moz-placeholder {
-  color: #888;
+.services {
+    display: flex;
+    padding: 10px;
+    margin: 10px;
 }
 
-::-moz-placeholder {
-  color: #888;
+.service-item {
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 7px 7px 39px #bcc5c9cc;
 }
 
-:-ms-input-placeholder {
-  color: #888;
+.services h1 {
+    font-family: poppins;
+    font-size: 1em;
+    padding: 5px;
+}
+
+.services p {
+    font-family: poppins;
+    font-size: .8rem;
+    padding: 5px;
 }

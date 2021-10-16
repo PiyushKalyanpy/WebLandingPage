@@ -1,0 +1,37 @@
+.services {
+    display: flex;
+    padding: 20px;
+    margin: 20px;
+    flex-direction: column;
+}
+
+.navbar {
+    flex-direction: column;
+    padding: 10px;
+    z-index: 1;
+    background-color: #000000d9;
+}
+
+.navbar ul li a {
+    font-size: .6rem;
+    padding: 1px 10px;
+}
+
+#home #head-top {
+    font-size: xx-large;
+    color: white;
+}
+
+#home #head-top-p {
+    font-size: 1em;
+    color: white;
+}
+
+#home #order {
+    font-size: 1em;
+    padding: 8px 18px;
+}
+
+.service-item {
+    margin: 20px 0px;
+}
