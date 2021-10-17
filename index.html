@@ -14,25 +14,35 @@
 
 <body>
 
-    <nav class="navbar">
-        <div id="logo">
-            <img src="../Assets/Tomato.png" alt="Logo">
-        </div>
-        <ul>
-            <li class="item"><a href="#">Home</a></li>
-            <li class="item"><a href="#">About Us</a></li>
-            <li class="item"><a href="#">Services</a></li>
-            <li class="item"><a href="#">Contriutor</a></li>
-            <li class="item"><a href="#">Contact Us</a></li>
-        </ul>
-    </nav>
+    <div class="scroll">
+        <p>Chat with Us</p>
+    </div>
+    <header>
 
-    <section id="home">
-        <h1 id="head-top">Welcome To Our Restaurant</h1>
-        <p id="head-top-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptates explicabo facere! </p>
-        <button id="order">Order Now</button>
-    </section>
-    <section>
+        <nav class="navbar" id="navbar_id">
+            <div id="logo">
+                <img id="logo_image" src="../Assets/Snackpacks.svg" alt="Logo">
+            </div>
+            <div id="hamburger" onclick="myFunction();"><i class="fas fa-bars"></i></div>
+
+            <ul id="list_itema">
+                <li class="item_list"><a href="#">Home</a></li>
+                <li class="item_list"><a href="#about">About Us</a></li>
+                <li class="item_list"><a href="#">Services</a></li>
+                <li class="item_list"><a href="#">Contriutor</a></li>
+                <li class="item_list"><a href="#">Contact Us</a></li>
+
+            </ul>
+
+        </nav>
+
+        <section id="home">
+            <h1 id="head-top">Welcome To Our Restaurant</h1>
+            <p id="head-top-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptates explicabo facere! </p>
+            <button id="order">Order Now</button>
+        </section>
+    </header>
+    <section id="main-content">
         <h1 id="services-h">Our Services</h1>
         <div class="services">
             <div id="service1" class="service-item"><img src="../Assets/logo1.svg">
@@ -49,6 +59,39 @@
             </div>
         </div>
     </section>
+    <section class="about_us">
+        <h1 id="about">About Me</h1>
+        <div id="about_start"><img id="about_img" src="../Assets/user.jpg">
+            <div id="start2">
+                <h2 id="about_name">John </h2>
+                <p id="about_para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae corrupti suscipit dicta tempora placeat amet illum officia ipsum illo nisi voluptas, deleniti fugiat dolorum perferendis facere molestias soluta ullam incidunt tenetur, enim
+                    qui. Omnis harum quisquam accusantium, dolor voluptatibus repellat asperiores ab fugiat nobis sequi. Ut libero quos aut perferendis.</p>
+            </div>
+
+        </div>
+    </section>
+    <section class="contributors">
+        <h1 id="about">Contributors</h1>
+        <div class="cont">
+            <div class="cont_items" id="cont1"><img src="../Assets/evernote.svg">
+                <p id="contname1">Evernote</p>
+            </div>
+            <div class="cont_items" id="cont2"><img src="../Assets/invision.svg">
+                <p id="contname2">Invision</p>
+            </div>
+            <div class="cont_items" id="cont3"><img src="../Assets/spotify.svg">
+                <p id="contname3">Spotify</p>
+            </div>
+            <div class="cont_items" id="cont4"><img src="../Assets/blackberry.svg">
+                <p id="contname4">Blackberry</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
 
 
 </body>

@@ -6,20 +6,43 @@
 }
 
 .navbar {
-    flex-direction: column;
     padding: 10px;
-    z-index: 1;
-    background-color: #000000d9;
+    transition: 2s;
+    box-sizing: border-box;
+}
+
+.navbar ul {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
 }
 
 .navbar ul li a {
-    font-size: .6rem;
+    font-size: 1rem;
     padding: 1px 10px;
+    flex: space-between;
+    width: 100%;
+}
+
+.navbar ul li {
+    padding: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    background: #ffffff21;
+    margin-bottom: 5px;
+}
+
+#list_itema {
+    display: none;
 }
 
 #home #head-top {
     font-size: xx-large;
     color: white;
+}
+
+#home {
+    height: fit-content;
 }
 
 #home #head-top-p {
@@ -34,4 +57,30 @@
 
 .service-item {
     margin: 20px 0px;
+}
+
+#about_start {
+    flex-direction: column;
+}
+
+#about_para,
+#about_name {
+    text-align: center;
+}
+
+#about_img {
+    max-width: 26vw;
+}
+
+#hamburger {
+    display: block;
+    align-self: end;
+    margin: 10px;
+    padding: 5px 10px;
+}
+
+#logo img {
+    width: 90px;
+    height: auto;
+    margin: 0;
 }
