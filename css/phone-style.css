@@ -84,3 +84,15 @@
     height: auto;
     margin: 0;
 }
+
+#form-image {
+    flex-direction: column;
+}
+
+#send-mail input {
+    display: none;
+}
+
+.form-data {
+    padding: 0;
+}
