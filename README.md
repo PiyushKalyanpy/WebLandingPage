@@ -11,7 +11,7 @@ Till now it is not having any **JS** Functionality except navbar in small device
 
 ## Website Link
 
-You can check the Website [here](https://piyushkalyanpy.github.io/Web-Dev/)
+You can check the Website [here](https://piyushkalyanpy.github.io/WebLandingPage/)
   
 ## Screenshots
 
